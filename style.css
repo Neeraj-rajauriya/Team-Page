@@ -1,0 +1,110 @@
+.header{
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#btn{
+    background-color: #b843aa;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    border: none;
+    font-size: 23px;
+    border-radius: 5px;
+}
+#about {
+    margin-top: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgb(159, 38, 161);
+    width: 50%;
+    margin: 20px auto;
+}
+
+#btn-1 {
+    background-color: #b843aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.main-section{
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Team-member {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.member {
+    text-align: center;
+    flex-basis: calc(33.33% - 40px);
+    /* margin: 10px; */
+    margin-bottom: 10px;
+}
+ 
+.img {
+    width: 100%;
+    height: auto;
+    max-width: 140px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.role {
+    color: gray;
+    font-size: 0.9rem;
+}
+.info {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .member {
+        flex-basis: calc(50% - 40px);
+    }
+    #about {
+        font-size: 14px;
+    }
+    #btn-1, #btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .member {
+        flex-basis: calc(100% - 40px);
+    }
+    #about {
+        font-size: 12px;
+    }
+    #btn-1, #btn {
+        font-size: 16px;
+    }
+}
